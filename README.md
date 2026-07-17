@@ -14,10 +14,11 @@ A simple Pomodoro timer plugin for [Obsidian](https://obsidian.md).
 
 copy到：`.obsidian/plugins/` , 打开obsidian-第三方插件，enable **Time Tomatoer** 即可使用。
 
-## Author
-
-akane
 
 ## Tip
 
 配合Obsidian_Project_Tracker使用会获得意想不到的好效果哦~
+
+## Author
+
+akane
