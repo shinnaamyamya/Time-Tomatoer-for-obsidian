@@ -1,6 +1,6 @@
 # Time Tomatoer
 
-A simple Pomodoro timer plugin for [Obsidian](https://obsidian.md).
+一个胡乱起名的计时器插件for [Obsidian](https://obsidian.md).
 
 ## Features
 
