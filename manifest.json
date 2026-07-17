@@ -1,0 +1,9 @@
+{
+  "id": "time-tomatoer",
+  "name": "Time Tomatoer",
+  "version": "1.0.0",
+  "minAppVersion": "1.7.0",
+  "description": " A simple clock,and nothing else.",
+  "author": "akane",
+  "isDesktopOnly": false
+}

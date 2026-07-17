@@ -1,0 +1,134 @@
+/* =====================================================
+   Time Tomatoer — Sidebar view styles
+   ===================================================== */
+
+.tomatoer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px 16px;
+    gap: 18px;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* ── Timer area ────────────────────────────── */
+
+.tomatoer-timer-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 24px 36px;
+    border-radius: 16px;
+    background: var(--background-secondary);
+    width: 100%;
+    max-width: 220px;
+    transition: background 0.4s;
+}
+
+.tomatoer-container[data-phase="running"] .tomatoer-timer-area {
+    background: rgba(200, 150, 30, 0.1);
+}
+
+.tomatoer-container[data-phase="paused"] .tomatoer-timer-area {
+    background: rgba(220, 50, 50, 0.1);
+}
+
+.tomatoer-timer-display {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--text-normal);
+    line-height: 1;
+}
+
+.tomatoer-status-text {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+}
+
+/* ── Controls ──────────────────────────────── */
+
+.tomatoer-controls {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    max-width: 220px;
+}
+
+.tomatoer-btn {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: opacity 0.15s, transform 0.1s, background 0.15s;
+}
+
+.tomatoer-btn:hover  { opacity: 0.85; }
+.tomatoer-btn:active { transform: scale(0.96); }
+.tomatoer-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+.tomatoer-btn-primary {
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.tomatoer-btn-secondary {
+    background: var(--background-modifier-border);
+    color: var(--text-normal);
+}
+
+.tomatoer-btn-danger {
+    background: var(--background-modifier-border);
+    color: var(--text-muted);
+}
+
+.tomatoer-btn-danger:hover {
+    background: var(--color-red);
+    color: #fff;
+    opacity: 1;
+}
+
+/* ── Today panel ───────────────────────────── */
+
+.tomatoer-today {
+    width: 100%;
+    border-top: 1px solid var(--background-modifier-border);
+    padding-top: 14px;
+}
+
+.tomatoer-today-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tomatoer-today-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+}
+
+.tomatoer-today-count {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+/* ── Status bar ────────────────────────────── */
+
+.tomatoer-statusbar {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
